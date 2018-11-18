@@ -109,6 +109,16 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
+  p {
+    margin: 0;
+    // padding-left: 0.5em;
+    // margin-left: 0.5rem;
+    padding: 0.8em;
+    font-size: 0.8em;
+    // font-weight: 500;
+    color: rgba(236, 236, 236, 0.795);
+  }
+
   img {
     width: 100%;
     border: 2px $secondary-color solid;
@@ -125,7 +135,7 @@ main {
 .btn {
   display: block;
   padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+  // margin-bottom: 0.5rem;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
