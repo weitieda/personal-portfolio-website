@@ -122,14 +122,14 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5.5em; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem;
     font-family: Menlo, Tahoma, Geneva, Verdana, sans-serif;
-    background: rgba(36, 36, 36, 0.5); }
+    background: rgba(36, 36, 36, 0); }
 
 a {
   color: #fff;
@@ -145,11 +145,12 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 30px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      margin-right: 10px; }
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -161,34 +162,30 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
+  .about-info .bio-title {
+    border-bottom: #eece1a 3px solid;
+    width: 45px; }
   .about-info .bio {
+    font-family: "Helvetica Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
     grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #2c2c2c;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    font-size: 1.5rem;
+    font-weight: 100; }
 
 .projects {
+  margin-top: 80px;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 2px #eece1a solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
@@ -196,9 +193,8 @@ main {
 
 .btn, .btn-dark, .btn-light {
   display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
     color: #000; }
@@ -213,10 +209,14 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
   background: #060606;
   color: #fff;
-  height: 60px; }
+  height: 30px; }
+  #main-footer p {
+    padding: 0.3rem;
+    font-size: 0.8em;
+    font-family: "Helvetica Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-weight: 200; }
 
 @media screen and (min-width: 1171px) {
   .projects {
