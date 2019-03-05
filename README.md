@@ -1,4 +1,3 @@
-# portfolio
-Personal portfolio website
+# Personal Website Source Code
 
-```npm run sass```
+https://www.tiedawei.com
