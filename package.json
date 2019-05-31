@@ -6,8 +6,7 @@
   "homepage": "https://weitieda.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.10.0",
-    "fstream": ">=1.0.12"
+    "node-sass": "^4.10.0"
   },
   "devDependencies": {},
   "scripts": {
